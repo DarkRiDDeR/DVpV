@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "build": "./node_modules/.bin/webpack -p --mode production",
+    "dev": "./node_modules/.bin/webpack-dev-server -p --env=development --mode development",
+    "lint": "eslint --ext .js .",
+    "lintfix": "eslint --fix --ext .js .",
+    "test": "yarn lint"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "html-loader": "^0.5.5",
+    "image-webpack-loader": "^4.6.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "webpack": "^4.12.0",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^5.0.2",
+    "core-js": "3",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "raw-loader": "^2.0.0",
+    "script-loader": "^0.7.2",
+    "terser-webpack-plugin": "^1.2.3",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-router": "^3.0.6",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.2"
+  }
+}

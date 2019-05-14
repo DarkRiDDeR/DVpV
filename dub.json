@@ -1,0 +1,22 @@
+{
+  "name": "dvpv",
+  "description": "Example of Dlang Vibe.d plus Vue.js application",
+  "authors": [
+    "DarkRiDDeR"
+  ],
+  "homepage": "https://github.com/DarkRiDDeR/dvpv",
+  "license": "MIT",
+  "sourcePaths"    : ["server"],
+  "targetType": "executable",
+  "versions": ["VibeDefaultMain"],
+  "configurations" : [
+    {
+      "name"           : "app",
+      "targetType"     : "executable",
+      "preRunCommands": ["yarn build"]
+    }
+  ],
+  "dependencies": {
+    "vibe-d": "~>0.8.2"
+  }
+}

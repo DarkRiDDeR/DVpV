@@ -84,8 +84,8 @@ module.exports = (env, argv) => ({
     ]
   },
   output: {
-    path: path.join(PUBLIC_DIR, "dist"),
-    publicPath: "/dist/",
+    path: argv.mode !== "production" ? PUBLIC_DIR : path.join(PUBLIC_DIR, "dist"),
+    publicPath: argv.mode !== "production" ?  "" : "/dist/",
     filename: "bundle.js"
   },
   devtool: argv.mode !== "production" ? "eval-cheap-module-source-map" : "source-map",

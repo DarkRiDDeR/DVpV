@@ -4,9 +4,9 @@
     h2 Test route
     ul
       li: router-link(to="/") Main (vue)
-      li: router-link(to="/test") Test (vue)
       li: router-link(to="/error404") Error (vue)
       li: a(href="/wi-test") WebInterface page (vibe)
+      li: router-link(to="/calc") Calculator (vue + vibed with generated REST API)
     router-view
 </template>
 
@@ -34,10 +34,12 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
+  max-width: 600px;
+  margin: 0 auto 10px;
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 10px 10px;
 }
 a {
   color: #42b983;

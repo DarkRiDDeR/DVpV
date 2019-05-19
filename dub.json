@@ -7,16 +7,29 @@
   "homepage": "https://github.com/DarkRiDDeR/dvpv",
   "license": "MIT",
   "sourcePaths"    : ["server"],
-  "targetType": "executable",
-  "versions": ["VibeDefaultMain"],
   "configurations" : [
     {
       "name"           : "app",
       "targetType"     : "executable",
-      "preRunCommands": ["yarn build"]
+      "targetName"     : "dvpv",
+      "preRunCommands" : [""],
+      "versions"       : ["VibeDefaultMain"],
+      "dependencies": {
+        "vibe-d": "~>0.8.5"
+      }
+    },
+    {
+      "name"           : "genrest",
+      "targetType"     : "executable",
+      "targetName"     : "genrest",
+      "versions"       : ["genRestApp"],
+      "dependencies": {
+        "vibe-d:inet": "~>0.8.5",
+        "vibe-d:web": "~>0.8.5"
+      }
     }
   ],
   "dependencies": {
-    "vibe-d": "~>0.8.2"
+    "vibed-rest-axios": "~>0.1.0"
   }
 }

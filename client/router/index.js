@@ -4,8 +4,8 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 import HelloWorld from '../views/HelloWorld.vue'
-import Test from '../views/Test.vue'
 import NotFound from '../views/NotFound.vue'
+import Calculator from '../components/Calculator.vue'
 
 
 export default new Router({
@@ -17,8 +17,8 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/test',
-      component: Test
+      path: '/calc',
+      component: Calculator
     },
     {
       path: '/404',

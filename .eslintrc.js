@@ -16,5 +16,6 @@ module.exports = {
   plugins: [
     "vue"
   ],
-  rules: {}
-};
+  rules: {
+    "vue/max-attributes-per-line": "off",
+  }};

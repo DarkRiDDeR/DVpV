@@ -2,13 +2,20 @@
 docs.json
 __dummy.html
 docs/
-/test
-test.so
-test.dylib
-test.dll
-test.a
-test.lib
-test-test-*
+/dvpv
+dvpv.so
+dvpv.dylib
+dvpv.dll
+dvpv.a
+dvpv.lib
+dvpv-test-*
+/genrest
+genrest.so
+genrest.dylib
+genrest.dll
+genrest.a
+genrest.lib
+genrest-test-*
 *.exe
 *.o
 *.obj
@@ -43,4 +50,3 @@ yarn-error.log*
 
 *.log
 .directory
-dvpv
